@@ -61,7 +61,7 @@ const AlcoholMeter = () => {
       <Text style={styles.text}>Hours</Text>
       <NumericInput style={styles.numericInput} onChange={e => setTime(e)} />
       <Text style={styles.text}>Gender</Text>
-      <TextInput
+      <TextInput style={styles.text}
         placeholder="Gender (male or female)"
         value={gender}
         onChangeText={(e) => setGender(e)}
@@ -85,8 +85,6 @@ const styles = StyleSheet.create({
 
   text: {
     fontSize: 25,
-    textAlign: 'center',
-    
   },
 
   header: {
